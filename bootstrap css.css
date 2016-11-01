@@ -1,0 +1,52 @@
+*{
+	margin:0;
+	padding:0;
+
+}
+body{
+	font-size:16px;
+	
+}
+.hero_box{
+	background:url("book-theme-ik17.jpg");
+	min-height: 100vh;
+	width:100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.brand{
+	background-color: rgba(240, 243, 219, 0.6);
+	border: 2px solid #593C2c;
+	border-right:none;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%,-50%);
+	padding:0;
+	width:32%;
+	height:200px;
+	display:flex;
+	align-items: center;
+	}
+
+.logo{
+	background-color:#593C2c;
+	height:200px;
+	width:110px;
+	margin:0;
+	}
+
+.brand p{
+	font-family: 'Rubik Mono One', sans-serif;
+	color:#29191B;
+	font-size: 250%;
+	margin:0px 10px;
+	padding:0;
+	
+}
+.changeColor{
+	color:#5A1E1D;
+	)
