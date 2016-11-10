@@ -16,6 +16,8 @@ body{
 	background-attachment: fixed;
 }
 
+	
+	
 .brand{
 	background-color: rgba(240, 243, 219, 0.8);
 	border: 2px solid #593C2c;
@@ -34,8 +36,8 @@ body{
 
 .logo{
 	background-color:#593C2c;
-	height:200px;
-	width:110px;
+	height:100%;
+	width:27%;
 	margin:0;
 	}
 
@@ -45,8 +47,8 @@ body{
 	font-size: 250%;
 	margin:0px 20px;
 	padding:0;
+	}
 	
-}
 .brand p::first-line{
 	color:#5A1E1D;
 }
@@ -56,23 +58,56 @@ body{
     top: 90%;
     left: 50%;
 	transform: translate(-50%,-50%);
+	text-align:center;
+	color:rgba(240, 243, 219, 0.8);
+	font-family: 'Rubik', sans-serif;
+	font-size:120%;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	
+}
+.scroll_button p{
+	display:inline-block;
+	text-shadow:8px 8px 10px #29191B;
+	
 }
 .scroll_button img{
 	height:50px;
 	width:50px;
 	filter:drop-shadow(8px 8px 10px #29191B);
+	margin:0px 50px;
 }
 
+.scroll_button  a{
+	color:#D9D4C0;
+	text-decoration:none;
+}
+.click_to_call{
+	position:fixed;
+	bottom:2%;
+	right:2%;
+	z-index:1;
+	background-color:rgba(0,0,0,0);
+	display:none;
+}
+.click_to_call i{
+	font-size:250%;
+	text-align:right;
+	color:green;
+	text-shadow:8px 8px 10px #29191B;
+}
+	
 .content{
 	background-color: rgba(240, 243, 219, 0.8);
 	display:flex;
 	flex-direction:row;
 	justify-content:center;
-	overflow:hidden;
+	
 }
 .content_box{
 	overflow:hidden;
-	width:405px;
+	min-width:405px;
 	height:580px;
 	margin: 30px 15px;
 	text-align:center;
@@ -84,6 +119,7 @@ body{
 	font-family: 'Pattaya', sans-serif;
 	color:#D9D4C0;
 	font-size:180%;
+	
 }
 .content_box img{
 	height:200px;
@@ -117,28 +153,38 @@ body{
 	background-color:#5A1E1D;
 }
 @media only screen and (max-width: 1100px)  {
+	
+	.click_to_call{
+	display:block;
+	}
+	.scroll_button p{
+	display:none;
+	}
+	
 	.content{
 		flex-direction:column;
 		align-items:stretch;
 	}
 	.content_box{
-		width:100vw;
+		
 		height:600px;
 		margin:0px;
-		
+	}
+	.recommendations{
+		padding-top:25px;
 	}
 	
 }
 .recommendations{
 	background-color:rgba(240, 243, 219, 0.8);
-	height:250px;
+	min-height:250px;
 	text-align:center;
 	
 }
 .recommendations h2{
 	font-family: 'Poiret One', cursive;
 	color:#95A6A7;
-	font-size:200%;
+	font-size:220%;
 	text-align:center;
 	
 }
@@ -155,4 +201,29 @@ body{
 .footer{
 	height:200px;
 	background-color:#29191B;
+	padding:1px;
+}
+.footer h2{
+	font-family: 'Poiret One', cursive;
+	color:#D9D4C0;
+	font-size:220%;
+	text-align:center;
+	margin:20px;
+}
+.footer  i{
+	color:#D9D4C0;
+	font-size:180%;
+	text-align:center;
+}
+.footer p{
+	font-family: 'Poiret One', cursive;
+	color:#D9D4C0;
+	font-size:140%;
+	position: absolute;
+    left: 50%;
+	transform: translate(-50%,0px);
+}
+.footer  a{
+	color:#D9D4C0;
+	text-decoration:none;
 }
