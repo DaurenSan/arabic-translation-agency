@@ -153,6 +153,10 @@ body{
 	background-color:#5A1E1D;
 }
 @media only screen and (max-width: 1100px)  {
+	.hero_box{
+		width:100vw;
+		overflow:hidden;
+	}	
 	
 	.brand{
 		width:329px;
@@ -186,6 +190,12 @@ body{
 	
 	.recommendations{
 		padding-top:25px;
+		width:100vw;
+		overflow:hidden;
+	}
+	.footer{
+		width:100vw;
+		overflow:hidden;
 	}
 	
 }
